@@ -1,4 +1,5 @@
 # rbc-test
+Calculte the total cost of fruits (Banana, Orange, Apple, Lemon, Peach) in a basket.
 
 There are two solutions in this repository. boot-basket is REST API implemented with Spring Boot. simple-basket is a simple standalone program to read data from csv files and calculate the total cost of fruits in the basket.
 
@@ -14,7 +15,7 @@ name   string    -- Fruit name
 price  double     -- Frut price
 
 The definition of fruit_quantity table:
-qid i       nt,    -- primary key, generated in Hibernate
+qid i       int,    -- primary key, generated in Hibernate
 fruit_id    int,   -- reference ID in fruit table
 quantity    int    -- quantity of specified fruit in basket
 </pre>

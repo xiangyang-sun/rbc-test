@@ -6,7 +6,7 @@ There are two solutions in this repository. boot-basket is REST API implemented 
 # boot-basket
 boot-basket is REST API implementation. It uses Spring Boot, Web, H2 embedded database and accurator. Two entities with many to one relationship are created. To simplify test, initial data is populated in data.sql script. You can remove it from src/main/resources directory if you need an empty database. Unit test is creaeted based on this initial data setup. You need to adjust the test code after changing the data in the script.
 
-There are two methods are implemented in the service classs to calculate the total cost. Method 1 is to retreive all records from database as list of entity in JAVA code, then calculate the total cost.  Method 2 is to calculate the total cost by join tables in database, then return the result as a double number.
+There are two methods are implemented in the service classs to calculate the total cost. Method 1 is to retreive all records from database as list of entity in JAVA code, then calculate the total cost.  Method 2 is to calculate the total cost by join tables in database, then return the result as a double number. Other APIs are also created to manage data in fruit and fruit_quantity tables. Check controller code for the detail.
 
 <pre>
 The definition of fruit table:

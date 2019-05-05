@@ -38,6 +38,25 @@ mvnw clean package
 <pre>
 In command line, cd to the source home directory. Then run below command.
 java -jar target/boot-basket-0.0.1-SNAPSHOT.jar
+
+http://localhost:8081/basket-total-cost2
+http://localhost:8081/basket-total-cost1
+http://localhost:8081/fruits
+http://localhost:8081/fruits/1
+http://localhost:8081/fruitquantities
+http://localhost:8081/fruitquantities/1000001
+
+Add, update and delete functions can be tested using Postman. When query by id, HTTP 404 error will be thrown if entity is not founf.
+
+</pre>
+
+## H2 console
+<pre>
+H2 console can be accessed http://localhost:8081/h2-console
+Driver: org.h2.Driver
+URL: jdbc:h2:mem:testdb
+User name: sa
+Password: <blank>
 </pre>
 
 # simple-basket

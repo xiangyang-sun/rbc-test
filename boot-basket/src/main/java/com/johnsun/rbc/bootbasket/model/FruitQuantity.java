@@ -1,15 +1,12 @@
 package com.johnsun.rbc.bootbasket.model;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //Fruits quantity in basket
 @Entity
@@ -20,9 +17,10 @@ public class FruitQuantity {
 	@GeneratedValue( strategy= GenerationType.AUTO ) 	
 	Integer qid;
 	
-    @ManyToOne(fetch = FetchType.LAZY)
+    //@ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fruit_id")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private Fruit fruit; // will be populated using Fruit after the read.
 
 	private int quantity;
